@@ -1,0 +1,235 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+/* Navbar Floating */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    background: transparent;
+}
+
+/* Logo Style */
+.nav-logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Flexbox layout with logo */
+.navbar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fbd46d;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Make nav-links grow to fill between logo and right section */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Right-side: search and icons */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right input {
+    padding: 6px 10px;
+    border-radius: 15px;
+    border: 1px solid #999;
+    background: #fff8d6;
+    font-size: 12px;
+}
+
+.nav-right span {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Klikable icons in navbar */
+.nav-right .icon-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+.nav-right .icon-link:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Banner Section with background image */
+.banner {
+    background-image: url('images/banner.jpg'); /* Ganti dengan path ke gambar banner kamu */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay {
+    background-color: rgba(255, 255, 255, 0.5); /* Efek transparan putih di atas gambar */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.banner p {
+    color: #000;
+}
+
+
+/* About Us */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Section Best Product */
+#best-product {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Hilangkan scrollbar (optional) */
+.product-container::-webkit-scrollbar {
+    height: 8px;
+}
+.product-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.product-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+/* Wrapper hanya tampilkan 3 card */
+.product-scroll-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 800px; /* misalnya 3 card berukuran 250px + gap */
+    margin: 0 auto;
+}
+
+/* Flex container horizontal */
+.product-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    min-width: max-content; /* supaya container lebar mengikuti isinya */
+}
+
+/* Product Card */
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Scrollbar optional */
+.product-scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.product-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+footer {
+    background: #f9c846;
+    padding: 40px 20px 10px;
+    color: #000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
