@@ -1,13 +1,11 @@
-const slider = document.getElementById('slider');
-const leftBtn = document.getElementById('leftBtn');
-const rightBtn = document.getElementById('rightBtn');
+const navbarNav = document.querySelector(".navbar-nav");
+document.querySelector("#humburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
 
-const cardWidth = 280 + 20; // width + margin/gap
-
-leftBtn.addEventListener('click', () => {
-  slider.parentElement.scrollLeft -= cardWidth;
-});
-
-rightBtn.addEventListener('click', () => {
-  slider.parentElement.scrollLeft += cardWidth;
+const humburger = document.querySelector("#humburger-menu");
+document.addEventListener("click", function (e) {
+  if (!humburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
 });

@@ -1,151 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="Lu2YxtTL2uE4-wa-o_4gkrwl9fiYwTUzKXIlQHPtcVI" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snack Kita</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@main/index.js"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/domyid/tracker@main/index.js"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
     <nav class="navbar">
-    <div class="navbar-box">
-        <!-- LOGO -->
-        <div class="nav-logo">
-            <img src="Foto/Logo Product.png" alt="Logo Snack Kita">
+      <a href="#" class="navbar-logo">Snack <span>Kita</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Product</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Selamat Datang Di Snack <span>Kita</span></h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="cta">Lihat Product</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2>Tentang <span>Kami</span></h2>
+      <div class="row">
+        <!-- BENAR: di dalam section -->
+        <div class="about-img">
+          <img src="Foto/Banner.png" alt="Tentang Kami" />
         </div>
-
-        <!-- NAV MENU -->
-        <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PRODUCT</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">LOCATION</a></li>
-        </ul>
-
-        <!-- SEARCH & ICONS -->
-        <div class="nav-right">
-            <input type="text" placeholder="Pencarian.....">
-            <a href="cart.html" class="icon-link">🛒</a>
-            <a href="login.html" class="icon-link">👤</a>
-        </div>
-    </div>
-</nav>
-
-<!-- Banner Section -->
-<section class="banner">
-    <img src="Foto/Banner.png" alt="Banner">
-</section>
-
-<section class="about">
-    <h2>ABOUT US</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-        mollit anim id est laborum.
-    </p>
-</section>
-
-<section class="best-product">
-  <h2>BEST PRODUCT</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-  <div class="slider-wrapper">
-
-    <div class="product-slider-container">
-      <div class="product-slider" id="slider">
-        <!-- Product 1 -->
-        <div class="product-card">
-          <img src="Foto/Produck.png" alt="Product 1">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p class="price">RP. 17.000</p>
-          <div class="actions">
-            <button class="btn-buy">Beli Sekarang</button>
-            <button class="btn-cart">Keranjang</button>
-            <input type="number" min="1" value="1">
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <img src="Foto/Produck.png" alt="Product 2">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p class="price">RP. 17.000</p>
-          <div class="actions">
-            <button class="btn-buy">Beli Sekarang</button>
-            <button class="btn-cart">Keranjang</button>
-            <input type="number" min="1" value="1">
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <img src="Foto/Produck.png" alt="Product 3">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p class="price">RP. 17.000</p>
-          <div class="actions">
-            <button class="btn-buy">Beli Sekarang</button>
-            <button class="btn-cart">Keranjang</button>
-            <input type="number" min="1" value="1">
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <img src="Foto/Produck.png" alt="Product 4">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p class="price">RP. 17.000</p>
-          <div class="actions">
-            <button class="btn-buy">Beli Sekarang</button>
-            <button class="btn-cart">Keranjang</button>
-            <input type="number" min="1" value="1">
-          </div>
+        <div class="content">
+          <h3>Kenapa harus memilih Snack Kita</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit
+            quidem voluptatibus voluptatum ipsa perspiciatis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+            unde? Numquam dolorum iusto modi deserunt officiis voluptate odit
+            dolor possimus.
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!-- About Section End -->
 
-<section class="product-gallery">
-  <h2>Foto Produk</h2>
-  <p>Lihat tampilan nyata dari produk-produk unggulan kami.</p>
-  
-  <div class="gallery-grid-2row">
-    <div class="gallery-item"><img src="Foto/Produck.png" alt="Produk 1"></div>
-    <div class="gallery-item"><img src="Foto/Produck.png" alt="Produk 2"></div>
-    <div class="gallery-item"><img src="Foto/Produck.png" alt="Produk 3"></div>
-    <div class="gallery-item"><img src="Foto/Produck.png" alt="Produk 4"></div>
-    <div class="gallery-item"><img src="Foto/Produck.png" alt="Produk 5"></div>
-    <div class="gallery-item"><img src="Foto/Produck.png" alt="Produk 6"></div>
-  </div>
-</section>
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2>Menu <span>Kami</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+        consectetur. Fugit illo unde ad consequuntur.
+      </p>
 
-<footer class="site-footer">
-  <div class="footer-content">
-    <h2>Foolish Developer</h2>
-    <p>Foolish Developer adalah situs blog di mana kamu akan menemukan tutorial menarik seputar desain dan pengembangan web. Setiap tutorial dijelaskan secara rinci langkah demi langkah beserta source code-nya.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-google-plus"></i></a>
-      <a href="#"><i class="fa fa-youtube"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Copyright ©2025 <a href="#">Foolishdeveloper</a></p>
-    <div class="footer-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
-    </div>
-  </div>
-</footer>
+      <div class="row">
+        <div class="menu-card">
+          <img src="Foto/Produck.png" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Snack 1</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="Foto/Produck.png" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Snack 1</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="Foto/Produck.png" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Snack 1</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="Foto/Produck.png" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Snack 1</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="Foto/Produck.png" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Snack 1</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="Foto/Produck.png" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Snack 1</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
 
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2>Kontak <span>Kami</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        iusto?
+      </p>
+
+      <div class="row">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d350.0825745798901!2d107.57958671409!3d-6.922582872754085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e72d5b6bba19%3A0x736f32d66a4f38e7!2sSnack%20Kita!5e0!3m2!1sid!2sid!4v1750078304829!5m2!1sid!2sid"
+            title="Lokasi Snack Kita pada Google Maps"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama Anda" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Email Anda" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="Nomor Telepon Anda" />
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Fiqry Firmansyah</a>. | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- Footer Start -->
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
